@@ -1,8 +1,6 @@
 import { Box, Button, TextField, Typography } from '@mui/material'
 import React from 'react'
 import SearchIcon from "@mui/icons-material/Search";
-import InputAdornment from "@mui/material/InputAdornment";
-import IconButton from "@mui/material/IconButton";
 import "./HeroSection.css"
 const HeroSection = () => {
   return (
@@ -36,16 +34,20 @@ const HeroSection = () => {
                 startAdornment: (
                   <SearchIcon sx={{ color: "action.active", mr: 1 }} />
                 ),
-                sx: { height: 44, marginRight: "170px", borderRadius: "5px" },
+                sx: {
+                  height: 40,
+                  marginRight: "170px",
+                  borderRadius: "5px 0 0 5px",
+                },
               }}
             />
             <Button
               variant="contained"
               sx={{
-                height: 44,
+                height: 40,
                 paddingX: "50px",
                 whiteSpace: "nowrap",
-                borderRadius: "0 5px 0 0",
+                borderRadius: "0 5px 5px 0",
                 fontSize: "15px",
                 textTransform: "capitalize",
                 backgroundColor: "#2563EB",
