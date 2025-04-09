@@ -148,7 +148,7 @@ const Footer = () => {
           />
           <Box className="text-center">
             <Typography className="fs-15 mt-3 text-span " variant="span">
-              All Right Reserved &copy; Edemy
+              Copyright 2024 © Edemy. All Right Reserved.
             </Typography>
           </Box>
         </Box>
