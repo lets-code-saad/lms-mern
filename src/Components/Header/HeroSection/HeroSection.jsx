@@ -30,6 +30,19 @@ const HeroSection = () => {
             <TextField
               fullWidth
               placeholder="Search any courses"
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    border: "1px solid #6B728033",
+                  },
+                  "&:hover fieldset": {
+                    border: "1px solid #6B728033",
+                  },
+                  "&.Mui-focused fieldset": {
+                    border: "1px solid #6B728033",
+                  },
+                },
+              }}
               InputProps={{
                 startAdornment: (
                   <SearchIcon sx={{ color: "action.active", mr: 1 }} />
@@ -51,6 +64,21 @@ const HeroSection = () => {
                 fontSize: "15px",
                 textTransform: "capitalize",
                 backgroundColor: "#2563EB",
+                boxShadow: "none",
+                "&:hover": {
+                  boxShadow: "none",
+                },
+
+                // On focus: no outline, no border glow
+                "&:focus": {
+                  outline: "none",
+                  boxShadow: "none",
+                },
+
+                // On active (click/press): no visual push effect
+                "&:active": {
+                  boxShadow: "none",
+                },
               }}
             >
               Search
