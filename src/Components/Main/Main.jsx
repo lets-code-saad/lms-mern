@@ -1,12 +1,12 @@
 import React from 'react'
-import Courses from './CoursesSection/Courses'
 import Testimonials from './Testimonials/Testimonials'
 import GetStarted from './GetStarted/GetStarted'
+import TopCourses from "./CoursesSection/TopCourses/TopCourses"
 
 const Main = () => {
   return (
     <>
-          <Courses /> 
+          <TopCourses /> 
       <Testimonials />
       <GetStarted/>
     </>

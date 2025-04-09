@@ -1,6 +1,7 @@
 import { Box, Button, CardMedia, Grid, Rating, Typography } from "@mui/material";
 import React from "react";
-import "./Courses.css"
+import "./TopCourses.css"
+import { Link } from "react-router-dom";
 
 const Courses = () => {
   const availableCourses = [
@@ -126,37 +127,39 @@ const Courses = () => {
             })}
           </Grid>
           <Box sx={{ marginTop: "50px" }} className="text-center">
-            <Button
-              variant="contained"
-              sx={{
-                height: 40,
-                paddingX: "30px",
-                whiteSpace: "nowrap",
-                border: "1px solid #8A8C8F",
-                borderRadius: "5px",
-                fontSize: "15px",
-                textTransform: "unset",
-                background: "none",
-                boxShadow: "none",
-                color: "#8A8C8F",
-                "&:hover": {
+            <Link to="/all-courses">
+              <Button
+                variant="contained"
+                sx={{
+                  height: 40,
+                  paddingX: "30px",
+                  whiteSpace: "nowrap",
+                  border: "1px solid #8A8C8F",
+                  borderRadius: "5px",
+                  fontSize: "15px",
+                  textTransform: "unset",
+                  background: "none",
                   boxShadow: "none",
-                },
+                  color: "#8A8C8F",
+                  "&:hover": {
+                    boxShadow: "none",
+                  },
 
-                // On focus: no outline, no border glow
-                "&:focus": {
-                  outline: "none",
-                  boxShadow: "none",
-                },
+                  // On focus: no outline, no border glow
+                  "&:focus": {
+                    outline: "none",
+                    boxShadow: "none",
+                  },
 
-                // On active (click/press): no visual push effect
-                "&:active": {
-                  boxShadow: "none",
-                },
-              }}
-            >
-              Show all courses
-            </Button>
+                  // On active (click/press): no visual push effect
+                  "&:active": {
+                    boxShadow: "none",
+                  },
+                }}
+              >
+                Show all courses
+              </Button>
+            </Link>
           </Box>
         </Box>
       </Box>
